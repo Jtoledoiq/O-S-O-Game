@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>OSO Game</title>
+    <style media="screen">
+    *{
+margin:0;
+padding:0;
+}
+
+h1 {
+text-align:center;
+}
+.bodyGame{
+
+display:flex;
+align-items:center;
+justify-content: center;
+}
+
+.options{
+display:flex;
+flex-direction: column;
+ align-items:center;
+justify-content: center;
+}
+
+.tic {
+ color:blue;
+background-color:black;
+width:40px;
+  height:40px;
+border: 2px solid blue;
+content-align:center;
+ padding:12px;
+}
+
+
+
+
+button {
+font-size:20px;
+color:black;
+text-align:center;
+background-color:Orange;
+width:60px;
+height:40px;
+padding:5px 10px 5px 10px;
+cursor:pointer;
+margin-top:10px;
+}
+button:focus {
+background-color:blue;
+}
+
+p{
+font-size:25px;
+}
+
+.enlighted {
+font-weight: bold;
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="content">
+<div class="title">
+  <h1>OSO Game</h1>
+</div>
+<div class="bodyGame">
+  <div class="board">
+    <table>
+
+<tr>
+  <input class="tic" type="button" value="" id="00">
+  <input class="tic" type="button" value="" id="01">
+  <input class="tic" type="button" value="" id="02">
+  <input class="tic" type="button" value="" id="03">
+  <input class="tic" type="button" value="" id="04">
+  <input class="tic" type="button" value="" id="05">
+  <input class="tic" type="button" value="" id="06">
+  <input class="tic" type="button" value="" id="07">
+  <input class="tic" type="button" value="" id="08">
+  <input class="tic" type="button" value="" id="09">
+
+</tr><br>
+<tr>
+  <input class="tic" type="button" value="" id="10">
+  <input class="tic" type="button" value="" id="11">
+  <input class="tic" type="button" value="" id="12">
+  <input class="tic" type="button" value="" id="13">
+  <input class="tic" type="button" value="" id="14">
+  <input class="tic" type="button" value="" id="15">
+  <input class="tic" type="button" value="" id="16">
+  <input class="tic" type="button" value="" id="17">
+  <input class="tic" type="button" value="" id="18">
+  <input class="tic" type="button" value="" id="19">
+
+</tr><br>
+<tr>
+  <input class="tic" type="button" value="" id="20">
+  <input class="tic" type="button" value="" id="21">
+  <input class="tic" type="button" value="" id="22">
+  <input class="tic" type="button" value="" id="23">
+  <input class="tic" type="button" value="" id="24">
+  <input class="tic" type="button" value="" id="25">
+  <input class="tic" type="button" value="" id="26">
+  <input class="tic" type="button" value="" id="27">
+  <input class="tic" type="button" value="" id="28">
+  <input class="tic" type="button" value="" id="29">
+
+</tr><br>
+<tr>
+  <input class="tic" type="button" value="" id="30">
+  <input class="tic" type="button" value="" id="31">
+  <input class="tic" type="button" value="" id="32">
+  <input class="tic" type="button" value="" id="33">
+  <input class="tic" type="button" value="" id="34">
+  <input class="tic" type="button" value="" id="35">
+  <input class="tic" type="button" value="" id="36">
+  <input class="tic" type="button" value="" id="37">
+  <input class="tic" type="button" value="" id="38">
+  <input class="tic" type="button" value="" id="39">
+
+</tr><br>
+<tr>
+  <input class="tic" type="button" value="" id="40">
+  <input class="tic" type="button" value="" id="41">
+  <input class="tic" type="button" value="" id="42">
+  <input class="tic" type="button" value="" id="43">
+  <input class="tic" type="button" value="" id="44">
+  <input class="tic" type="button" value="" id="45">
+  <input class="tic" type="button" value="" id="46">
+  <input class="tic" type="button" value="" id="47">
+  <input class="tic" type="button" value="" id="48">
+  <input class="tic" type="button" value="" id="49">
+
+</tr><br>
+
+<tr>
+  <input class="tic" type="button" value="" id="50">
+  <input class="tic" type="button" value="" id="51">
+  <input class="tic" type="button" value="" id="52">
+  <input class="tic" type="button" value="" id="53">
+  <input class="tic" type="button" value="" id="54">
+  <input class="tic" type="button" value="" id="55">
+  <input class="tic" type="button" value="" id="56">
+  <input class="tic" type="button" value="" id="57">
+  <input class="tic" type="button" value="" id="58">
+  <input class="tic" type="button" value="" id="59">
+
+</tr><br>
+<tr>
+  <input class="tic" type="button" value="" id="60">
+  <input class="tic" type="button" value="" id="61">
+  <input class="tic" type="button" value="" id="62">
+  <input class="tic" type="button" value="" id="63">
+  <input class="tic" type="button" value="" id="64">
+  <input class="tic" type="button" value="" id="65">
+  <input class="tic" type="button" value="" id="66">
+  <input class="tic" type="button" value="" id="67">
+  <input class="tic" type="button" value="" id="68">
+  <input class="tic" type="button" value="" id="69">
+
+</tr><br>
+<tr>
+  <input class="tic" type="button" value="" id="70">
+  <input class="tic" type="button" value="" id="71">
+  <input class="tic" type="button" value="" id="72">
+  <input class="tic" type="button" value="" id="73">
+  <input class="tic" type="button" value="" id="74">
+  <input class="tic" type="button" value="" id="75">
+  <input class="tic" type="button" value="" id="76">
+  <input class="tic" type="button" value="" id="77">
+  <input class="tic" type="button" value="" id="78">
+  <input class="tic" type="button" value="" id="79">
+
+</tr><br>
+<tr>
+  <input class="tic" type="button" value="" id="80">
+  <input class="tic" type="button" value="" id="81">
+  <input class="tic" type="button" value="" id="82">
+  <input class="tic" type="button" value="" id="83">
+  <input class="tic" type="button" value="" id="84">
+  <input class="tic" type="button" value="" id="85">
+  <input class="tic" type="button" value="" id="86">
+  <input class="tic" type="button" value="" id="87">
+  <input class="tic" type="button" value="" id="88">
+  <input class="tic" type="button" value="" id="89">
+
+</tr><br>
+
+ <tr>
+  <input class="tic" type="button" value="" id="90">
+  <input class="tic" type="button" value="" id="91">
+  <input class="tic" type="button" value="" id="92">
+  <input class="tic" type="button" value="" id="93">
+  <input class="tic" type="button" value="" id="94">
+  <input class="tic" type="button" value="" id="95">
+  <input class="tic" type="button" value="" id="96">
+  <input class="tic" type="button" value="" id="97">
+  <input class="tic" type="button" value="" id="98">
+  <input class="tic" type="button" value="" id="99">
+
+</tr><br>
+
+
+
+
+</table>
+  </div>
+  <div class="options">
+    <div class="buttons">
+      <button type="button" class="turnO">O</button>
+      <button type="button" class="turnS">S</button>
+    </div>
+    <div class="scoreboard">
+      <p class="playerOneScore enlighted">Player one: <span class="playerOne">0</span></p>
+      <p class="playerTwoScore">Player two: <span class="playerTwo">0</span></p>
+    </div>
+  </div>
+</div>
+</div>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+var turn = "";
+var turnPlayer1 = false;
+var countPlayer1 = 0;
+var countPlayer2 = 0;
+var matrix = [];
+for (var i = 0; i < 10; i++) {
+  matrix[i] = new Array(10);
+}
+for (var i = 0; i < 10; i++) {
+  for (var j = 0; j < 10; j++) {
+    matrix[i][j] = "";
+  }
+}
+
+$(".turnO").click(function() {
+  turn = "O";
+});
+
+$(".turnS").click(function() {
+  turn = "S";
+  //console.log({ turn });
+});
+
+$(".tic").click(function() {
+  if (matrix[parseInt(this.id[0])][parseInt(this.id[1])] == "" && turn!="") {
+
+    //console.log(this.id);
+    matrix[this.id[0]][this.id[1]] = turn;
+
+    //$("#" + this.id).text(turn);
+    $("#" + this.id).prop("value", turn);
+    //console.log("this.id= " + this.id);
+
+    //console.table({ matrix});
+    var idZero=parseInt(this.id[0]);
+    var idOne= parseInt(this.id[1]);
+
+    winCondition(idZero, idOne);
+    highlightTurn();
+    changePlayerTurn();
+
+  }
+});
+
+function winCondition(a, b) {
+  //console.log("a="+a +", b="+ b);
+
+  if (
+    matrix[a][b] === "S" &&
+    matrix[a][b - 1] === "O" &&
+    matrix[a][b + 1] === "O"
+  ) {
+    console.log("it works");
+    increaseScore();
+  }
+  if (
+    matrix[a][b] === "O" &&
+    matrix[a][b - 1] === "S" &&
+    matrix[a][b - 2] === "O"
+  ) {
+    console.log("it works2");
+    increaseScore();
+  }
+  if (
+    matrix[a][b] === "O" &&
+    matrix[a][b + 1] === "S" &&
+    matrix[a][b + 2] === "O"
+  ) {
+    console.log("it works3");
+    increaseScore();
+  }
+  if ( //this fails in top
+    a>=2 &&
+    matrix[a][b] === "O" &&
+    matrix[a - 1][b] === "S" &&
+    matrix[a - 2][b] === "O"
+  ) {
+    console.log("it works4");
+    increaseScore();
+  }
+  if ( //this fails at the bottom
+    a<=(matrix.length-2) &&
+    matrix[a][b] === "O" &&
+    matrix[a + 1][b] === "S" &&
+    matrix[a + 2][b] === "O"
+  ) {
+    console.log("it works5");
+    increaseScore();
+  }
+
+  if ( //this fails at the bottom
+    a<=(matrix.length-2) &&
+    matrix[a][b] === "O" &&
+    matrix[a + 2][b - 2] === "O" &&
+    matrix[a + 1][b - 1] === "S"
+  ) {
+    console.log("it works6");
+    increaseScore();
+  }
+  if ( //this fails in top
+    a>=2 &&
+    matrix[a][b] === "O" &&
+    matrix[a - 2][b + 2] === "O" &&
+    matrix[a - 1][b + 1] === "S"
+  ) {
+    console.log("it works7");
+    increaseScore();
+  }
+  if (//fails in top
+a>=2 &&
+    matrix[a][b] === "O" &&
+    matrix[a - 1][b - 1] === "S" &&
+    matrix[a - 2][b - 2] === "O"
+  ) {
+    console.log("it works8");
+    increaseScore();
+  }
+  if (//fails at the bottom
+    a<=(matrix.length-2) &&
+    matrix[a][b] === "O" &&
+    matrix[a + 1][b + 1] === "S" &&
+    matrix[a + 2][b + 2] === "O"
+  ) {
+    console.log("it works9");
+    increaseScore();
+  }
+  if (
+    matrix[a][b] === "S" &&
+    matrix[a - 1][b] === "O" &&
+    matrix[a + 1][b] === "O"
+  ) {
+    console.log("it works10");
+    increaseScore();
+  }
+  if (
+    matrix[a][b] === "S" &&
+    matrix[a - 1][b - 1] === "O" &&
+    matrix[a + 1][b + 1] === "O"
+  ) {
+    console.log("it works11");
+    increaseScore();
+  }
+  if (
+    matrix[a][b] === "S" &&
+    matrix[a + 1][b - 1] === "O" &&
+    matrix[a - 1][b + 1] === "O"
+  ) {
+    console.log("it works12");
+    increaseScore();
+  }
+}
+
+function changePlayerTurn() {
+  turnPlayer1 = !turnPlayer1;
+  //console.log({ turnPlayer1 });
+}
+
+function increaseScore() {
+  if (turnPlayer1) {
+    //turnPlayer1=true;
+
+    countPlayer1++;
+    // console.log({countPlayer1});
+    $(".playerOne").text(countPlayer1);
+  } else {
+    //turnPlayer1=false;
+
+    countPlayer2++;
+    //console.log({countPlayer2})
+     $(".playerTwo").text(countPlayer2);
+  }
+
+}
+
+function highlightTurn() {
+  if (turnPlayer1) {
+    $(".playerOneScore").addClass("enlighted");
+    $(".playerTwoScore").removeClass("enlighted");
+  } else {
+    $(".playerTwoScore").addClass("enlighted");
+    $(".playerOneScore").removeClass("enlighted");
+  }
+}
+});
+    </script>
+  </body>
+</html>
