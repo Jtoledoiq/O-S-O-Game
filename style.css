@@ -5,6 +5,7 @@ padding:0;
 
 h1 {
 text-align:center;
+margin:50px;
 }
 .bodyGame{
 
@@ -37,7 +38,7 @@ button {
 font-size:20px;
 color:black;
 text-align:center;
-background-color:Orange;
+background-color:;
 width:60px;
 height:40px;
 padding:5px 10px 5px 10px;
