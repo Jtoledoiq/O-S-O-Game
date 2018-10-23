@@ -1,0 +1,57 @@
+*{
+margin:0;
+padding:0;
+}
+
+h1 {
+text-align:center;
+}
+.bodyGame{
+
+display:flex;
+align-items:center;
+justify-content: center;
+}
+
+.options{
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+}
+
+.tic {
+color:blue;
+background-color:black;
+width:40px;
+height:40px;
+border: 2px solid blue;
+content-align:center;
+padding:12px;
+}
+
+
+
+
+button {
+font-size:20px;
+color:black;
+text-align:center;
+background-color:Orange;
+width:60px;
+height:40px;
+padding:5px 10px 5px 10px;
+cursor:pointer;
+margin-top:10px;
+}
+button:focus {
+background-color:blue;
+}
+
+p{
+font-size:25px;
+}
+
+.enlighted {
+font-weight: bold;
+}
