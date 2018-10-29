@@ -169,7 +169,8 @@
 </div>
 
     <script type="text/javascript">
-    $(document).ready(function() {
+    //Code by Jesús Toledo - Jtoledoiq
+$(document).ready(function() {
 
   var turn = "";
   var turnPlayer1 = true;
@@ -198,6 +199,7 @@
 
   $(".tic").click(function() {
     //console.log({flag})
+
     if (matrix[parseInt(this.id[0])][parseInt(this.id[1])] == "" && turn!="") {
 
       //console.log(this.id);
@@ -227,9 +229,12 @@
       matrix[a][b + 1] === "O"
     ) {
       flag=1;
-
       console.log("it works");
       increaseScore();
+      $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a}${b-1}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a}${b+1}`).css("color", "rgb(153, 153, 102, 0.3)");
+
 
     }
     if (
@@ -240,6 +245,9 @@
       flag=1;
       console.log("it works2");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a}${b-1}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a}${b-2}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if (
       matrix[a][b] === "O" &&
@@ -249,6 +257,9 @@
       flag=1;
       console.log("it works3");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a}${b+1}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a}${b+2}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if ( //this fails in top
       a>=2 &&
@@ -259,6 +270,9 @@
       flag=1;
       console.log("it works4");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-1}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-2}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if ( //this fails at the bottom
       a<=(matrix.length-2) &&
@@ -269,6 +283,9 @@
       flag=1;
       console.log("it works5");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+1}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+2}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
 
     if ( //this fails at the bottom
@@ -280,6 +297,9 @@
       flag=1;
       console.log("it works6");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+2}${b-2}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+1}${b-1}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if ( //this fails in top
       a>=2 &&
@@ -290,6 +310,9 @@
       flag=1;
       console.log("it works7");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-2}${b+2}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-1}${b+1}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if (//fails in top
   a>=2 &&
@@ -300,6 +323,9 @@
       flag=1;
       console.log("it works8");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-1}${b-1}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-2}${b-2}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if (//fails at the bottom
       a<=(matrix.length-2) &&
@@ -310,6 +336,9 @@
       flag=1;
       console.log("it works9");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+1}${b+1}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+2}${b+2}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if (
       matrix[a][b] === "S" &&
@@ -319,6 +348,9 @@
       flag=1;
       console.log("it works10");
       increaseScore();
+      $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-1}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+1}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if (
       matrix[a][b] === "S" &&
@@ -328,6 +360,9 @@
       flag=1;
       console.log("it works11");
       increaseScore();
+      $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-1}${b-1}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+1}${b+1}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if (
       matrix[a][b] === "S" &&
@@ -337,6 +372,9 @@
       flag=1;
       console.log("it works12");
       increaseScore();
+       $(`#${a}${b}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a+1}${b-1}`).css("color", "rgb(153, 153, 102, 0.3)");
+      $(`#${a-1}${b+1}`).css("color", "rgb(153, 153, 102, 0.3)");
     }
     if(flag==0) {
       highlightTurn();
@@ -380,6 +418,7 @@
     }
   }
 });
+
 
     </script>
   </body>
